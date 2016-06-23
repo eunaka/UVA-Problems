@@ -5,7 +5,7 @@
 
 using namespace std;
 
-const int MAX_HIGH = 10010;
+const int MAX_HIGH = 10000;
 
 int main()
 {
@@ -13,20 +13,15 @@ int main()
 
     int high[MAX_HIGH];
 
-    string res("");
-    stringstream converte;
-
-    int i, j;
+    int i;
 
     int temp_high = 0;
 
     for(i = 0; i < MAX_HIGH; i++)
         high[i] = 0;
 
-    for(j = 0; j < 8; j++)
+    while(scanf("%d %d %d", &building[0], &building[1], &building[2]) != EOF)
     {
-        scanf("%d %d %d", &building[0], &building[1], &building[2]);
-
         for(i = building[0]; i < building[2]; i++)
             // Define a altura do maior edificio no intervalo
             high[i] = (high[i] > building[1]) ? high[i] : building[1];
@@ -36,23 +31,13 @@ int main()
         if(high[i] != temp_high)
         {
             if(i > 1)
-            {
-                res += " ";
-            }
+                cout << " ";
 
-            converte.str("");
-            converte << i;
-            res += converte.str();
-            res += " ";
-
-            converte.str("");
-            converte << high[i];
-            res += converte.str();
-
+            cout << i << " " << high[i];
             temp_high = high[i];
         }
 
-    cout << res << endl;
+    cout << endl;
 
     return 0;
 }

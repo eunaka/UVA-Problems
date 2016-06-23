@@ -9,9 +9,9 @@ const int MAX_HIGH = 10000;
 
 int main()
 {
-    int building[3];
+    int building[3];                                                               // vetor com as coordenadas do building
 
-    int high[MAX_HIGH];
+    int high[MAX_HIGH];                                                            // vetor com todas as coordenadas
 
     int i;
 
@@ -30,7 +30,7 @@ int main()
     for(i = 0; i < MAX_HIGH; i++)
         if(high[i] != temp_high)
         {
-            if(i > 1)
+            if(i > 1)   // para nao colocar um espaco no inicio
                 cout << " ";
 
             cout << i << " " << high[i];

@@ -18,7 +18,7 @@ int main()
 
     int i, j;
 
-    int temp_high = -1;
+    int temp_high = 0;
 
     for(i = 0; i < MAX_HIGH; i++)
         high[i] = 0;

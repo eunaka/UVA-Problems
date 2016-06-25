@@ -1,7 +1,13 @@
+/*
+    Author:            Yuri Moura
+    Submission:        17566220
+    Problem:           105	The Skyline Problem
+    Language:          C++11
+    Submission Date:   2016-06-23 21:40:58
+*/
+
 #include <iostream>
-#include <sstream>
 #include <cstdio>
-#include <string>
 
 using namespace std;
 

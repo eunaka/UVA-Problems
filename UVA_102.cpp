@@ -1,3 +1,11 @@
+/*
+    Author:            Yuri Moura
+    Submission:        17565402
+    Problem:           102	Ecological Bin Packing
+    Language:          C++11
+    Submission Date:   2016-06-23 17:39:49
+*/
+
 #include <cstdio>
 #include <cstring>
 using namespace std;
